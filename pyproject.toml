@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rpr-tent"
+version = "0.1.0"
+description = "Light tent and batch photography pipeline for Radeon ProRender in Blender"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "Pillow>=9.0.0",
+]
+authors = [
+    { name = "Alec Romano" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["blender", "radeon-prorender", "rpr", "product-photography", "rendering", "automation"]
+
+[project.urls]
+Homepage = "https://github.com/alecdromano/rpr-tent"
+
+[tool.setuptools.packages.find]
+include = ["rpr_tent*"]
+
